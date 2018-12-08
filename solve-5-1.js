@@ -34,11 +34,14 @@ let length = polymer.length
 
 console.log(length)
 
+let i = 0
+
 while (true) {
+  i++
   //console.log(polymer.join(''))
   polymer = react(polymer)
 
-  console.log(length)
+  console.log(i, length)
 
   if (polymer.length === length) {
     //console.log(polymer.join(''))
