@@ -27,6 +27,6 @@
 # 8-2
     ./solve-8-2.ts < input-8.txt
 # 9-1
-    ./solve-9-1.ts < input-9.txt
+    ./solve-9-1.ts
 # 9-2
-    ./solve-9-2.ts < input-9.txt
+    ./solve-9-2.ts
