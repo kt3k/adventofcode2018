@@ -32,8 +32,6 @@
     ./solve-9-2.ts
 # 10-1
     ./solve-10-1.ts < input-10.txt
-# 10-2
-    ./solve-10-2.ts < input-10.txt
 # 11-1
     ./solve-11-1.ts < input-11.txt
 # 11-2
