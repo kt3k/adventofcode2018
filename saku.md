@@ -38,3 +38,7 @@
     ./solve-12-1.ts < input-12.txt
 # 12-2
     ./solve-12-2.ts < input-12.txt
+# 13-1
+    ./solve-13-1.ts < input-13.txt
+# 13-2
+    ./solve-13-2.ts < input-13.txt
