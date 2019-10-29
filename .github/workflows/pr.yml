@@ -1,9 +1,18 @@
-name: CI
-on: [push]
+name: release-xyz
+on:
+  push:
+    branches:
+    - "release-xyz"
+
 jobs:
-  pr:
+  pull-request:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
-    - name: Run a one-line script
-      run: git status
+    - uses: actions/checkout@master
+    - name: pull-request
+      uses: repo-sync/pull-request@v2
+      with:
+        destination_branch: "master"          # If blank, default: master
+        pr_title: "Pulling ${{ github.ref }} into master"
+        pr_body: ":crown: *An automated PR*"  # Full markdown support, requires pr_title to be set
+        github_token: ${{ secrets.GITHUB_TOKEN }}
